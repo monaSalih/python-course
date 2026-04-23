@@ -1,3 +1,0 @@
-Ali,25
-Sara,30
-John,22
