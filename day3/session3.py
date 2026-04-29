@@ -1,69 +1,59 @@
-# Basic Function
-def greet():
-    print("Hello, World!")
+# def greet():
+#     print("Hello, World!")  
+# greet()
 
-greet()
+# def greet(name):#parameter
+#     print ("hello",name)
 
-# Function with Parameters
-def greet(name):
-    print("Hello", name)
+# greet("Ali")#argument
 
-greet("Ali")
+# def add(a,b):
+#     return a + b
+# result = add(5,3)
+# print ("result=",result)
 
-# Return Values
-def add(a, b):
-    return a + b
+#=================>
+# def calcut_dis(price):
+#    return price * 0.9#print || return
+# print(calcut_dis(15))
 
-result = add(5, 3)
-print(result)
+# =================>
+# def multi(a,b):
+#     return a * b
+# print (multi(4,77))
 
-#another example 
-def calculate_discount(price):
-    return price * 0.9
+#=====================>
+# Global vs local value
 
-print(calculate_discount(100))
+# def local_val():
+#    a= 10
+#    print(a)
 
-# ======================
-# Scope (Local vs Global)
-def test():
-    x = 10
-    print(x)
+# print(a) 
+#=====================>
+# a=10 #global value
+# def Global_val():
+#     print(a)
+# a=5
+# print(a)
+#=====================>
+#try and except
+# try:
+#     x=int("abc")
+# except:
+#     print("error occurred")
 
-test()
-# print(x) ❌ Error
-x = 5
-
-def show():
-    print(x)
-
-show()
-
-# Modifying Global Variables
-x = 5
-
-def update():
-    global x
-    x = 10
-
-# ======================
-# Error Handling (Try/Except)
-
-try:
-    x = int("abc")
-except:
-    print("Error occurred")
-
-# ======================
-# Real-World Example
-def login(username, password):
-    if username == "admin" and password == "1234":
-        return "Success"
+#=====================>
+def login (username,password):
+    if username == "admin" and password == "1234":#T and T => t
+        return "success"
     else:
-        return "Fail"
+        return "failure"
+    
 
 try:
-    user = input("Username: ")
-    pwd = input("Password: ")
-    print(login(user, pwd))
+    banana= input("please enter your username: ")
+    pas= input("please enter your password: ")
+    print(login(banana,pas))
 except Exception as e:
-    print("Error:", e)
+    print("An error occurred:", e)

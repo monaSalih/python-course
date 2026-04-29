@@ -1,3 +1,4 @@
-import math_utils as math_utils
+import math_fun as mt
 
-print(math_utils.add(2, 3))
+print (mt.add(5,3))
+print (mt.multi(5,3))
